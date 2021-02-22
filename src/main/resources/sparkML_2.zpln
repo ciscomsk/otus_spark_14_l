@@ -1,6 +1,30 @@
 ﻿{
  "paragraphs": [
   {
+   "text": "%spark.conf\n\nSPARK_HOME /home/mike/spark-3.0.2-bin-hadoop3.2",
+   "user": "anonymous",
+   "dateUpdated": "2021-02-22T17:42:26+0300",
+   "progress": 0.0,
+   "config": {},
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "results": {
+    "code": "SUCCESS",
+    "msg": []
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500.0,
+   "jobName": "paragraph_1614004946162_225903657",
+   "id": "paragraph_1614004946162_225903657",
+   "dateCreated": "2021-02-22T17:42:26+0300",
+   "dateStarted": "2021-02-22T17:42:26+0300",
+   "dateFinished": "2021-02-22T17:42:26+0300",
+   "status": "FINISHED"
+  },
+  {
    "title": "Spark ML Production",
    "text": "%md\n# Spark ML Production",
    "user": "anonymous",
