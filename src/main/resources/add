@@ -1,3 +1,8 @@
 ./spark-shell
   :quit
 
+ProdML -> assembly
+
+/home/mike/_learn/repos/otus/spark/l/14/src/main/resources/pipelineModel /home/mike/_learn/repos/otus/spark/l/14/src/main/resources/BankChurners.csv /home/mike/_learn/repos/otus/spark/l/14/src/main/resources/result
+
+./spark-submit --class ProdML /home/mike/_learn/repos/otus/spark/l/14/target/scala-2.12/14-assembly-0.1.jar /home/mike/_learn/repos/otus/spark/l/14/src/main/resources/pipelineModel /home/mike/_learn/repos/otus/spark/l/14/src/main/resources/BankChurners.csv /home/mike/_learn/repos/otus/spark/l/14/src/main/resources/result

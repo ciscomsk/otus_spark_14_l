@@ -1,7 +1,7 @@
-import org.apache.spark.sql.SaveMode
 import org.apache.spark.ml.PipelineModel
+import org.apache.spark.sql.SaveMode
 
-object ProdML extends App with SparkSessionWrapper {
+object ProdMLLocal extends App with SparkSessionWrapperLocal {
   if (args.length != 3) {
     println("Usage: ProdML <path-to-model> <path-to-input> <path-to-output>")
     sys.exit(-1)
