@@ -1,5 +1,5 @@
 import org.apache.spark.ml.PipelineModel
-import org.apache.spark.sql.SaveMode
+import org.apache.spark.sql.{DataFrame, SaveMode}
 
 object ProdMLLocal extends App with SparkSessionWrapperLocal {
   if (args.length != 3) {
@@ -10,15 +10,15 @@ object ProdMLLocal extends App with SparkSessionWrapperLocal {
   import spark.implicits._
 
   try {
-    val model = PipelineModel.load(args(0))
+    val model: PipelineModel = PipelineModel.load(args(0))
 
-    val data = spark
+    val data: DataFrame = spark
       .read
       .option("header", "true")
       .option("inferSchema", "true")
       .csv(args(1))
 
-    val prediction = model.transform(data)
+    val prediction: DataFrame = model.transform(data)
 
     prediction
       .filter($"prediction" === 1)
